@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OutlineTextView">
+        <attr name="outlineColor" format="color" />
+        <attr name="outlineWidth" format="float" />
+    </declare-styleable>
+
+    <!-- Glass surfaces (GlassContainer, GlassTopBar, GlassBottomBar, GlassNavigationBar, GlassCard) -->
+    <declare-styleable name="Glass">
+        <attr name="glassCornerRadius" format="dimension" />
+        <attr name="glassBlurRadius" format="dimension" />
+        <!-- The sibling view whose content is blurred behind this surface. Without it the surface is frosted, not blurred -->
+        <attr name="glassBlurTarget" format="reference" />
+        <attr name="glassTint" format="color" />
+        <attr name="glassStaticTint" format="color" />
+        <attr name="glassBorderColor" format="color" />
+        <attr name="glassPressable" format="boolean" />
+    </declare-styleable>
+    <attr name="glassButtonStyle" format="reference" />
+    <attr name="glassCardStyle" format="reference" />
+
+    <declare-styleable name="Xpandable">
+        <attr name="isExpanded" format="boolean"/>
+    </declare-styleable>
+</resources>

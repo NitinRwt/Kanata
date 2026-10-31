@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="glass_tint">#8C181828</color>
+    <color name="glass_tint_static">#E0181828</color>
+    <color name="glass_tint_sheet">#EB181828</color>
+    <color name="glass_border">#2EFFFFFF</color>
+    <color name="glass_border_highlight">#14FFFFFF</color>
+    <color name="glass_highlight">#1AFFFFFF</color>
+    <color name="glass_ripple">#24FFFFFF</color>
+    <color name="glass_input_border">#5CFFFFFF</color>
+    <color name="glass_dim">#59000000</color>
+</resources>

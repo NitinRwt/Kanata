@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Liquid glass design tokens. Every glass surface in the app reads from these. -->
+<resources>
+    <!-- Fill over a live blurred backdrop -->
+    <color name="glass_tint">#A6FFFFFF</color>
+    <!-- Fill when nothing is blurred behind (old Android, list cards), more opaque to stay readable -->
+    <color name="glass_tint_static">#D9FFFFFF</color>
+    <!-- Sheets and dialogs sit over the whole screen, so they stay the most opaque -->
+    <color name="glass_tint_sheet">#EBF7F7FA</color>
+    <!-- Hairline edge: a soft dark outer line plus a light inner line reads as a lit glass edge -->
+    <color name="glass_border">#1A000000</color>
+    <color name="glass_border_highlight">#B3FFFFFF</color>
+    <!-- Top-down sheen -->
+    <color name="glass_highlight">#66FFFFFF</color>
+    <color name="glass_ripple">#1F000000</color>
+    <!-- Inputs keep a stronger edge so they stay recognisable as fields (WCAG non-text contrast) -->
+    <color name="glass_input_border">#52000000</color>
+    <color name="glass_dim">#33000000</color>
+
+    <dimen name="glass_radius_small">14dp</dimen>
+    <dimen name="glass_radius">20dp</dimen>
+    <dimen name="glass_radius_large">28dp</dimen>
+    <dimen name="glass_radius_pill">100dp</dimen>
+    <dimen name="glass_border_width">1dp</dimen>
+    <dimen name="glass_blur_radius">24dp</dimen>
+    <dimen name="glass_window_blur_radius">20dp</dimen>
+    <dimen name="glass_elevation">4dp</dimen>
+
+    <item name="glass_press_scale" format="float" type="dimen">0.96</item>
+    <integer name="glass_press_duration">140</integer>
+
+    <item name="glass_dialog_applied" type="id" />
+    <item name="depth3d_scroller" type="id" />
+</resources>

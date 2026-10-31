@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Static liquid glass surface: frosted fill, top sheen, dark outer + light inner hairline. Generated from glass_tokens -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/glass_tint_static" />
+            <corners android:radius="@dimen/glass_radius_pill" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:centerY="0.4"
+                android:startColor="@color/glass_highlight"
+                android:centerColor="@android:color/transparent"
+                android:endColor="@android:color/transparent" />
+            <corners android:radius="@dimen/glass_radius_pill" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/glass_border_width" android:color="@color/glass_border" />
+            <corners android:radius="@dimen/glass_radius_pill" />
+        </shape>
+    </item>
+    <item android:bottom="@dimen/glass_border_width" android:left="@dimen/glass_border_width" android:right="@dimen/glass_border_width" android:top="@dimen/glass_border_width">
+        <shape android:shape="rectangle">
+            <stroke android:width="0.5dp" android:color="@color/glass_border_highlight" />
+            <corners android:radius="@dimen/glass_radius_pill" />
+        </shape>
+    </item>
+</layer-list>

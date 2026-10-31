@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Android 12+: the system compositor blurs the screen behind dialogs. If the device or battery
+         saver turns cross-window blur off, the system skips it and the dim from Base.DialogTheme remains -->
+    <style name="DialogTheme" parent="Base.DialogTheme">
+        <item name="android:windowBlurBehindEnabled">true</item>
+        <item name="android:windowBlurBehindRadius">@dimen/glass_window_blur_radius</item>
+        <item name="android:backgroundDimAmount">0.22</item>
+    </style>
+</resources>
