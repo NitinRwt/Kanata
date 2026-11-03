@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Themed-icon version of the mark (Android 13+): one colour, so the folded corner is set apart by an even gap.
+     The page is grown 3 units with rounded outer corners to match the stroked colour icon's size -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M42.21,25.81L82.84,49.02Q88.05,52 82.84,54.98L59.42,68.36Q56.82,69.85 54.2,68.38L39.62,60.22Q37,58.76 37,55.76L37,28.83Q37,22.83 42.21,25.81Z M40,57L56.8,66.4L56.19,47.06Z" />
+    <path android:fillColor="#FFFFFFFF" android:pathData="M44.55,56.91L54.37,62.41L54.02,51.09Z" />
+</vector>

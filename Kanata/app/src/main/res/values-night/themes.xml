@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.Kanata" parent="Theme.Base">
+        <item name="android:statusBarColor">@color/status</item>
+        <item name="colorPrimary">@color/pink_200</item>
+        <item name="colorOnPrimary">@color/bg_black</item>
+        <item name="android:textColor">@color/bg_white</item>
+        <item name="colorSecondary">@color/brand_indigo_light</item>
+        <item name="colorSecondaryVariant">@color/brand_indigo_light</item>
+    </style>
+</resources>

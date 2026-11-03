@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dynamic Island: the floating glass pill tracking downloads and the last watched episode -->
+<resources>
+    <dimen name="island_height">48dp</dimen>
+    <dimen name="island_text_width">170dp</dimen>
+    <dimen name="island_width_expanded">340dp</dimen>
+    <dimen name="island_margin">12dp</dimen>
+
+    <style name="IslandCircle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="IslandAction">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/bg_opp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

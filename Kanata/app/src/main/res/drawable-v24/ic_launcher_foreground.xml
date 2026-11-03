@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Kanata mark: a play button whose bottom corner folds over like a turned page, for watching and reading.
+     Sized for the 66dp adaptive-icon safe zone -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- The page, corners rounded by its own stroke -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,28L82,52L56.8,66.4L40,57Z"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineJoin="round"
+        android:strokeWidth="6" />
+    <!-- Shadow the folded corner casts on it -->
+    <path android:fillColor="@color/icon_fold_shadow" android:pathData="M40.93,55.34L57.73,64.74L57.12,45.4Z" />
+    <!-- The folded corner, showing the page's pink back -->
+    <path
+        android:pathData="M40,57L56.8,66.4L56.19,47.06Z"
+        android:strokeLineJoin="round"
+        android:strokeWidth="2.4">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="40" android:startY="57" android:endX="56.2" android:endY="47.1">
+                <item android:offset="0" android:color="#FFFF8BC2" />
+                <item android:offset="1" android:color="#FFFFD3E8" />
+            </gradient>
+        </aapt:attr>
+        <aapt:attr name="android:strokeColor">
+            <gradient android:type="linear" android:startX="40" android:startY="57" android:endX="56.2" android:endY="47.1">
+                <item android:offset="0" android:color="#FFFF8BC2" />
+                <item android:offset="1" android:color="#FFFFD3E8" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

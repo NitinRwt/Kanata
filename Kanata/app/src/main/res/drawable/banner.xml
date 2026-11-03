@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android TV banner: the Kanata mark on its tile and the KANATA wordmark (stroked letterforms). Flat colours only,
+     since TV launchers on Android 5-6 can't draw vector gradients -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+    <path android:fillColor="#FF120F3A" android:pathData="M0,0h320v180h-320z" />
+    <!-- Icon tile -->
+    <path android:fillColor="@color/icon_indigo" android:pathData="M38,40h64a18,18 0,0 1,18 18v64a18,18 0,0 1,-18 18h-64a18,18 0,0 1,-18 -18v-64a18,18 0,0 1,18 -18z" />
+    <group android:translateX="16" android:translateY="36">
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M40,28L82,52L56.8,66.4L40,57Z"
+            android:strokeColor="#FFFFFF"
+            android:strokeLineJoin="round"
+            android:strokeWidth="6" />
+        <path android:fillColor="@color/icon_fold_shadow" android:pathData="M40.93,55.34L57.73,64.74L57.12,45.4Z" />
+        <path
+            android:fillColor="@color/icon_fold"
+            android:pathData="M40,57L56.8,66.4L56.19,47.06Z"
+            android:strokeColor="@color/icon_fold"
+            android:strokeLineJoin="round"
+            android:strokeWidth="2.4" />
+    </group>
+    <!-- K A N A T A -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeWidth="4.2"
+        android:pathData="M138,77V103 M157,77L140,92 M145,88L157,103 M164,103L175,77L186,103 M168.5,95H181.5 M194,103V77L214,103V77 M221,103L232,77L243,103 M225.5,95H238.5 M248,77H270 M259,77V103 M275,103L286,77L297,103 M279.5,95H292.5" />
+    <path android:fillColor="@color/icon_fold" android:pathData="M138,115h159v2.4h-159z" />
+</vector>

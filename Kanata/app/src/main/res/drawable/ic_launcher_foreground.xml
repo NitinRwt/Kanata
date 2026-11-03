@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Kanata mark (flat fallback for Android 5-6; drawable-v24 has the shaded one): a play button whose bottom corner
+     folds over like a turned page, for watching and reading. Sized for the 66dp adaptive-icon safe zone -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,28L82,52L56.8,66.4L40,57Z"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineJoin="round"
+        android:strokeWidth="6" />
+    <path android:fillColor="@color/icon_fold_shadow" android:pathData="M40.93,55.34L57.73,64.74L57.12,45.4Z" />
+    <path
+        android:fillColor="@color/icon_fold"
+        android:pathData="M40,57L56.8,66.4L56.19,47.06Z"
+        android:strokeColor="@color/icon_fold"
+        android:strokeLineJoin="round"
+        android:strokeWidth="2.4" />
+</vector>
