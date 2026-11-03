@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Static Kanata logo on a round gradient disc (TV channel logo, Android 8+) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:pathData="M54,0a54,54 0,1 1,0 108a54,54 0,1 1,0 -108z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="0" android:startY="0" android:endX="108" android:endY="108">
+                <item android:offset="0" android:color="#FF1A8CFF" />
+                <item android:offset="0.55" android:color="#FF5B48FF" />
+                <item android:offset="1" android:color="#FF9B3DFF" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,28L82,52L56.8,66.4L40,57Z"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineJoin="round"
+        android:strokeWidth="6" />
+    <path android:fillColor="#383A2BB8" android:pathData="M40.93,55.34L57.73,64.74L57.12,45.4Z" />
+    <path
+        android:fillColor="#FFFFB0D5"
+        android:pathData="M40,57L56.8,66.4L56.19,47.06Z"
+        android:strokeColor="#FFFFB0D5"
+        android:strokeLineJoin="round"
+        android:strokeWidth="2.4" />
+</vector>

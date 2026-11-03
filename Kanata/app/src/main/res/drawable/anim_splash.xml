@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Kanata logo animation: the gradient disc opens, the play button pops in, then its corner folds over like a
+     turned page. Under a second, as the Android 12 splash wants. 768x768 canvas, drawn inside the 512 circle the
+     splash screen shows. Also the Settings and Home logo. -->
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:width="768dp"
+            android:height="768dp"
+            android:viewportWidth="768"
+            android:viewportHeight="768">
+
+            <!-- Everything on the 108 icon grid, scaled 5.2x around the centre -->
+            <group
+                android:translateX="103.2"
+                android:translateY="103.2"
+                android:scaleX="5.2"
+                android:scaleY="5.2">
+
+                <group
+                    android:name="disc"
+                    android:pivotX="54"
+                    android:pivotY="54"
+                    android:scaleX="0"
+                    android:scaleY="0">
+                    <path android:pathData="M54,4.77a49.23,49.23 0,1 1,0 98.46a49.23,49.23 0,1 1,0 -98.46z">
+                        <aapt:attr name="android:fillColor">
+                            <gradient android:type="linear" android:startX="4.77" android:startY="4.77" android:endX="103.23" android:endY="103.23">
+                                <item android:offset="0" android:color="#FF1A8CFF" />
+                                <item android:offset="0.55" android:color="#FF5B48FF" />
+                                <item android:offset="1" android:color="#FF9B3DFF" />
+                            </gradient>
+                        </aapt:attr>
+                    </path>
+                </group>
+
+                <group
+                    android:name="play"
+                    android:pivotX="54"
+                    android:pivotY="52"
+                    android:scaleX="0"
+                    android:scaleY="0">
+                    <path
+                        android:fillColor="#FFFFFF"
+                        android:pathData="M40,28L82,52L56.8,66.4L40,57Z"
+                        android:strokeColor="#FFFFFF"
+                        android:strokeLineJoin="round"
+                        android:strokeWidth="6" />
+                    <!-- Until the corner folds, this fills it in so the play button starts out whole -->
+                    <path
+                        android:name="corner"
+                        android:fillColor="#FFFFFF"
+                        android:pathData="M40,57L56.8,66.4L40,76Z"
+                        android:strokeColor="#FFFFFF"
+                        android:strokeLineJoin="round"
+                        android:strokeWidth="6" />
+                </group>
+
+                <!-- The corner folds up over the page: it grows out from the fold line -->
+                <group
+                    android:name="fold"
+                    android:pivotX="48.4"
+                    android:pivotY="61.7"
+                    android:scaleX="0"
+                    android:scaleY="0">
+                    <path android:fillColor="#383A2BB8" android:pathData="M40.93,55.34L57.73,64.74L57.12,45.4Z" />
+                    <path
+                        android:fillColor="#FFFFB0D5"
+                        android:pathData="M40,57L56.8,66.4L56.19,47.06Z"
+                        android:strokeColor="#FFFFB0D5"
+                        android:strokeLineJoin="round"
+                        android:strokeWidth="2.4" />
+                </group>
+            </group>
+        </vector>
+    </aapt:attr>
+
+    <target android:name="disc">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:duration="320" android:interpolator="@android:interpolator/overshoot" android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1" />
+                <objectAnimator android:duration="320" android:interpolator="@android:interpolator/overshoot" android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1" />
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="play">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:duration="320" android:interpolator="@android:interpolator/overshoot" android:propertyName="scaleX" android:startOffset="220" android:valueFrom="0" android:valueTo="1" />
+                <objectAnimator android:duration="320" android:interpolator="@android:interpolator/overshoot" android:propertyName="scaleY" android:startOffset="220" android:valueFrom="0" android:valueTo="1" />
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="corner">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:duration="1" android:propertyName="fillAlpha" android:startOffset="620" android:valueFrom="1" android:valueTo="0" />
+                <objectAnimator android:duration="1" android:propertyName="strokeAlpha" android:startOffset="620" android:valueFrom="1" android:valueTo="0" />
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="fold">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:duration="320" android:interpolator="@android:interpolator/fast_out_slow_in" android:propertyName="scaleX" android:startOffset="620" android:valueFrom="0" android:valueTo="1" />
+                <objectAnimator android:duration="320" android:interpolator="@android:interpolator/fast_out_slow_in" android:propertyName="scaleY" android:startOffset="620" android:valueFrom="0" android:valueTo="1" />
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>
