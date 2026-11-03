@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 108 108">
+  <defs>
+    <clipPath id="tile"><rect width="108" height="108" rx="24"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="0" x2="108" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1A8CFF"/><stop offset=".55" stop-color="#5B48FF"/><stop offset="1" stop-color="#9B3DFF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80" cy="22" r="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".3"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fold" x1="40" y1="57" x2="56.2" y2="47.1" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF8BC2"/><stop offset="1" stop-color="#FFD3E8"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#tile)">
+    <rect width="108" height="108" fill="url(#bg)"/>
+    <rect width="108" height="108" fill="url(#glow)"/>
+  </g>
+  <path d="M40,28L82,52L56.8,66.4L40,57Z" fill="#fff" stroke="#fff" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M40.93,55.34L57.73,64.74L57.12,45.4Z" fill="#3A2BB8" fill-opacity=".22"/>
+  <path d="M40,57L56.8,66.4L56.19,47.06Z" fill="url(#fold)" stroke="url(#fold)" stroke-width="2.4" stroke-linejoin="round"/>
+</svg>
